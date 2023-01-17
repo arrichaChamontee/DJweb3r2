@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+   <h1 class="bg">Welcome to Winter</h1>
+    <h2 class="bg-info text-bg-danger"></h2>
+        Merry Christmas and heppy new year 2023
+    </h2>
+{#    <hr width="50%">#}
+    <br>
+    <p class="bg-secondary text-bg-dark  text-center">
+        <img src="{%static 'images/hny1.jpg' %}" class="rounded-circle" width="500px" height="300px"><br>
+        <i> Christmas is a time to reconnect, and your greeting <br>
+         is a great holiday ambassador. A Christmas message can be <br>
+            the simple gesture that gets you back in touch. <br></i>
+    </p> <br><br>
+    <p class="bg-secondary text-bg-dark  text-center">
+        <img src="{%static 'images/hny2.jpg' %}" class="rounded-circle" width="500px" height="300px"><br>
+        Send your Merry Christmas wishes early in December <br>
+        so people can enjoy them all month long. The first Christmas <br>
+        greeting signals that the holiday season has begun! <br>
+    </p>
+    <br>
+    สิ่งที่สนใจ:
+    <ul type="square" class="list-group">
+            <li class="list-group-item-primary">สิ่งที่สนใจ:</li>
+            <li class="list-group-item">เพลง</li>
+            <li class="list-group-item">เครื่องสำอาง</li>
+            <li class="list-group-item">เสื้อผ้า</li>
+            <li class="list-group-item">ไฮเดรนเยีย</li>
+        </ul><br>
+    เเอพที่สนใจ :
+    <ol type="i" class="list-group">
+        <li class="list-group-item-warning">เเอพที่สนใจ:</li>
+        <li class="list-group-item"><a href="http://Line.com" target="_blank"> Line</a></li>
+        <li class="list-group-item"><a href="http://instagram.com" target="_blank"> instagram</a></li>
+        <li class="list-group-item"><a href="http://Facebook.com" target="_blank">Facebook</a></li>
+        <li class="list-group-item"><a href="http://Tiktok.com" target="_blank">Tiktok</a></li>
+        <li class="list-group-item"><a href="http://Pinterest.com" target="_blank">Pinterest</a></li>
+        <li class="list-group-item">
+            <a href="http://www.google.com" target="_blank">
+                <img src="{%  static 'images/gg1.png' %}" width="100px" height="55">
+            </a>
+        </li>
+    </ol>
+    <a href="/FirsPage" class="btn-success">Go to first page</a> <br>
+    <a href="{%  url 'firstpage' %}"class="btn-primary">First page</a>
+    <a href="{%  url 'secondpage' %}"class="btn-warning"> Second page</a>
+    <a href="{%  url 'thirdpage' %}"class="btn-warning"> Third page</a>
+
+{% endblock %}

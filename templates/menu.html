@@ -1,0 +1,24 @@
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+<ul class="list-group">
+    <li class="list-group">
+    <li class="list-group-item active"><b>Menu:</b></li>
+    <li><a href="{% url 'home' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+        {% fa5_icon 'fas fa-home' %} Home</a></li>
+    <li><a href="{% url 'firstpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+         {% fa5_icon 'fa-solid fa-hand-pointer' %} First Page</a></li>
+    <li><a href="{% url 'secondpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+    {% fa5_icon 'fa-solid fa-clone' %} Second Page</a></li>
+    <li><a href="{% url 'thirdpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+         {% fa5_icon 'fa-solid fa-chess-king' %} Third Page</a></li>
+    <li><a href="{% url 'hnppage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+         {% fa5_icon 'fa-solid fa-gifts' %} HNY.Page</a></li>
+    <li><a href="{% url 'testbt' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary ">
+         {% fa5_icon 'fa-solid fa-film' %} test.Page</a></li>
+</ul>

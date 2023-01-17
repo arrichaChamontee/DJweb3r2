@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{%  load static %}
+{% block content %}
+<h1>This is Test BooTstrap</h1>
+<div class="alert alert-success">
+  <strong>สำเร็จ!</strong>
+    ท่านลงบัญชีผู้ใช้ระบบเรียนร้อยเเล้ว
+</div><br>
+
+<div class="alert alert-success">
+  <strong>ผิดพลาด!</strong>
+   สินค้าที่เลือกหมดจากคลัง ไม่สามารถสั่งซื้อได้
+</div>
+
+
+<span class="badge bg-warning">Warning</span>
+    <span class="badge bg-primary">Primary</span> <br><br>
+    <span class="badge rounded-pill bg-dark">Dark</span>
+    <span class="badge rounded-pill bg-danger">Danger</span>
+    <br>
+
+    <div class="progress" style="height: 50px">
+        <div class="progress-bar bg-success" style="width: 80%; height: 30px">80%</div>
+    </div>
+    <p class="text-danger">
+        002 เซรั่ม น้ำตบ ราคา 5000 บาท
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+    </p>
+    <div id="demo" class="collapse">
+        Biotherm Life Plankton Elixir Serum เซรั่มแพลงตอน สุดเข้มข้นที่จะช่วยฟื้นบํารุงผิวอย่างล้ำลึก <br>
+        ลดเลือนริ้วรอย เสริมปราการให้ผิวแข็งแรง จุดด่างดำดูจางลง ผิวกระจ่างใส เรียบเนียน คืนความอ่อนเยาว์ <br>
+        กระชับใน 8 วัน เผยผิวสุขภาพดีแบบขั้นสุด <br>
+
+        Lift Plankton Elixir Serum ผสาน 4 พลัง จากส่วนผสมอันเป็นกรรมสิทธิ์ของไบโอเธิร์มอย่าง <br>
+        Life Plankton ความเข้มข้น 5 % ช่วยให้สมดุลของผิวกลับคืนมาอย่างเป็นธรรมชาติ <br>
+
+        พร้อมไฮยาลูรอนิกแอซิด (Hyaluronic Acid) 2 โมเลกุล ทั้งโมเลกุลใหญ่และโมเลกุลเล็ก <br>
+        ให้ริ้วรอยที่เคยดูลึกก็ดูตื้นขึ้นอย่างเห็นได้ชัด ผิวแลดูอ่อนเยาว์ กระชับขึ้นด้วย Bifida Ferment <br>
+        เพิ่มประสิทธิให้สามารถปกป้องผิวจากมลภาวะต่าง ๆ ได้ดีขึ้น และ พร้อม Vitamin C ที่จะช่วยให้ผิวกระจ่างใส <br>
+        ลดเลือนจุดด่างดำ เผยผิวเรียบเนียน<br>
+    </div>
+    <br>
+
+    <p class="text-danger">
+        002 เซรั่ม น้ำตบ ราคา 5000 บาท
+    <a href="" data-bs-toggle="collapse" data-bs-target="#demo1">Collapsible</a>
+    </p>
+    <div id="demo1" class="collapse">
+        Biotherm Life Plankton Elixir Serum เซรั่มแพลงตอน สุดเข้มข้นที่จะช่วยฟื้นบํารุงผิวอย่างล้ำลึก <br>
+        ลดเลือนริ้วรอย เสริมปราการให้ผิวแข็งแรง จุดด่างดำดูจางลง ผิวกระจ่างใส เรียบเนียน คืนความอ่อนเยาว์ <br>
+        กระชับใน 8 วัน เผยผิวสุขภาพดีแบบขั้นสุด <br>
+
+        Lift Plankton Elixir Serum ผสาน 4 พลัง จากส่วนผสมอันเป็นกรรมสิทธิ์ของไบโอเธิร์มอย่าง <br>
+        Life Plankton ความเข้มข้น 5 % ช่วยให้สมดุลของผิวกลับคืนมาอย่างเป็นธรรมชาติ <br>
+
+        พร้อมไฮยาลูรอนิกแอซิด (Hyaluronic Acid) 2 โมเลกุล ทั้งโมเลกุลใหญ่และโมเลกุลเล็ก <br>
+        ให้ริ้วรอยที่เคยดูลึกก็ดูตื้นขึ้นอย่างเห็นได้ชัด ผิวแลดูอ่อนเยาว์ กระชับขึ้นด้วย Bifida Ferment <br>
+        เพิ่มประสิทธิให้สามารถปกป้องผิวจากมลภาวะต่าง ๆ ได้ดีขึ้น และ พร้อม Vitamin C ที่จะช่วยให้ผิวกระจ่างใส <br>
+        ลดเลือนจุดด่างดำ เผยผิวเรียบเนียน<br>
+    </div>
+    <br>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        เปิดหน้าต่าง
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-keyboard="false" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">เป็นคนสวยมาก</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    ดาวคณะบริหารธุรกิจ 2022 ตัวเเม่จะเเคร์เพื่อ
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Hover</a>
+    <br><br><br><br><br>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a>
+    <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a>
+    <br><br><br><br><br>
+{% endblock %}

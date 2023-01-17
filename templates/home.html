@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-secondary text-white rounded">
+        <h1><b>Rajamangala University of Technology Isan</b></h1>
+        <p><b>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน เป็นมหาวิทยาลัยเทคโนโลยีที่จัดการเรียนการสอนในพื้นที่ 4 <br>
+            จังหวัดภาคตะวันออกเฉียงเหนือ คือ นครราชสีมา ขอนแก่น สกลนคร และสุรินทร์ <br>
+            โดยได้รับการยกฐานะจากวิทยาเขตในสังกัดสถาบันเทคโนโลยีราชมงคล เป็นมหาวิทยาลัยเทคโนโลยีราชมงคล <br>
+            จำนวน 9 แห่งทั่วประเทศไทย
+        </b>
+        </p>
+    </div>
+    <div class="text-center"><br>
+     <div class="spinner-border text-info"></div>
+     <div class="spinner-border text-warning"></div>
+     <div class="spinner-grow text-info"></div>
+     <div class="spinner-grow text-warning"></div>
+     <div class="spinner-border text-info"></div>
+     <div class="spinner-border text-warning"></div>
+    </div>
+    <br>
+
+    <div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{% static 'images/hpy5.jpg' %}" width="420px" height="420px"
+                class="img-thumbnail">
+                </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/hpy6.jpg' %}" width="420px" height="420px"
+                class="img-thumbnail">
+                </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/hpy7.jpg' %}" width="420px" height="520px"
+                class="img-thumbnail">
+                </div>
+        </div>
+    </div>
+{% endblock %}
